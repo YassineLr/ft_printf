@@ -6,7 +6,7 @@
 /*   By: ylarhris <ylarhris@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 08:25:50 by ylarhris          #+#    #+#             */
-/*   Updated: 2022/10/24 10:35:46 by ylarhris         ###   ########.fr       */
+/*   Updated: 2022/10/24 12:22:01 by ylarhris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_printf_hexa_lowercase(unsigned long nb, int *count)
 			c = nb + '0';
 		else
 			c = nb + 87;
-		ft_putchar(nb, count);
+		ft_putchar(c, count);
 	}
 	else
 	{

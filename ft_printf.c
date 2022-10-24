@@ -6,7 +6,7 @@
 /*   By: ylarhris <ylarhris@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 21:52:38 by ylarhris          #+#    #+#             */
-/*   Updated: 2022/10/24 10:41:07 by ylarhris         ###   ########.fr       */
+/*   Updated: 2022/10/24 12:20:26 by ylarhris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	ft_printf(const char *str, ... )
 		}
 		else if (str[i] == '%' && str[i + 1] == 'p')
 		{
-			write(1, "0x", 2);
+			ft_putstr("0x",&count);
 			ft_printf_hexa_lowercase(va_arg(ap, long), &count);
 			i++;
 		}
@@ -57,7 +57,10 @@ int	ft_printf(const char *str, ... )
 			i++;
 		}
 		else if (str[i] == '%' && str[i + 1] == 'u')
-			ft_putunbr(va_arg(ap, unsigned int), &count);
+			{
+				ft_putunbr(va_arg(ap, unsigned int), &count);
+				i++;
+			}
 		else if (str[i] == '%' && str[i + 1] == 'x')
 		{
 			ft_printf_hexa_lowercase(va_arg(ap, unsigned int), &count);

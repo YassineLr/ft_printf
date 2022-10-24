@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_hexa_upperrcase.c                        :+:      :+:    :+:   */
+/*   ft_printf_hexa_uppercase.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ylarhris <ylarhris@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 08:28:45 by ylarhris          #+#    #+#             */
-/*   Updated: 2022/10/24 10:35:31 by ylarhris         ###   ########.fr       */
+/*   Updated: 2022/10/24 12:22:43 by ylarhris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_printf_hexa_uppercase(unsigned long nb, int *count)
 			c = nb + '0';
 		else
 			c = nb + 55;
-	    ft_putchar(nb, count);
+	    ft_putchar(c, count);
 	}
 	else
 	{
