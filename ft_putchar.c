@@ -6,7 +6,7 @@
 /*   By: ylarhris <ylarhris@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 08:28:19 by ylarhris          #+#    #+#             */
-/*   Updated: 2022/10/24 10:31:53 by ylarhris         ###   ########.fr       */
+/*   Updated: 2022/10/25 01:56:06 by ylarhris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_putchar(char c, int *count)
 {
 	write(1, &c, 1);
-    (*count)++;
+	(*count)++ ;
 }

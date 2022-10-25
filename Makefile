@@ -17,7 +17,7 @@ CC = cc
 %.o:%.c
 	${CC} ${CFLAGS} -c $<
 
-all = ${NAME}
+all : ${NAME}
 
 ${NAME}: ${OBJ}
 	${AR} ${NAME} ${OBJ}
